@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+  }
+html.dark{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+html.dark {
+    background-color: #111;
+    color: var(--primary-color);
+  }
+body.dark{
+    background-color: var(--secondary-color);
+}
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.clock {
+    width: 50vw;
+    height:70vh;
+}
+.hours,.minutes,.seconds{
+    background-color:var(--primary-color);
+    width:3px;
+    position:absolute;
+    transform-origin: bottom;
+}
+.hours{
+    height:3rem;
+    top:15rem;
+    left:45rem;
+}
+.minutes{
+    height:4rem;
+    top:15rem;
+    left:45rem;
+ 
+}
+.seconds{
+    height:5rem;
+    top:15rem;
+    left:45rem;
+    background-color: rgb(255, 0, 0);
+}
+.time-date{
+    position:absolute;
+    top:25rem;
+    left:40rem;
+}
+
+
+.toggle {
+    position: absolute;
+    top: 100px;
+    left: 700px; /* Add left value to ensure it appears on screen */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.toggle {
+    z-index: 10;
+}
+.time{
+    font-size: 4rem;
+}
+.date{
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-left:2rem;
+}

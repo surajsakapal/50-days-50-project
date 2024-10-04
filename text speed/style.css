@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height: 100vh;
+    background-color: rgb(144, 52, 52);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:white;
+    font-size:2rem;
+}
+.speed{
+    padding:1rem 1rem;
+    background-color: transparent;
+    color:white;
+    position:absolute;
+    bottom:1.2rem;
+    left:38rem;
+    font-size:1.5rem;
+}
+input{
+    position:absolute;
+    bottom:2rem;
+    width:3rem;
+    font-size:1.5rem;
+    text-align: center;
+}

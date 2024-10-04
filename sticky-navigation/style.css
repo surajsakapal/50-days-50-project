@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:4rem;
+    width:100%;
+    background-color: rgb(42, 42, 45);
+    position:fixed;
+    transition:all 0.5s ease-in-out;
+}
+.nav h1{
+    color: white;
+    margin:0 2rem;
+    font-size: 2rem;
+}
+.nav ul{
+    display:flex;
+    justify-content: center;
+}
+
+.nav ul li{
+    list-style: none;    
+}
+
+.nav ul li a{
+    color:rgb(250, 243, 243);
+    text-decoration:none;
+    margin-right:2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav ul li a.current,
+.nav a:hover{
+    color:#c0392b;
+    transition: all 0.3s ease-in-out;
+}
+.active{
+    background-color: white;
+    height:3rem;
+    transition: all 0.3s ease-in-out;
+ }
+.active h1{
+    color:black;
+}
+.active ul li a{
+    color:black;
+}
+.hero{
+    background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    background-color: black;
+    background-size: cover;
+    background-position: bottom center;
+    z-index:-2;
+    position:relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.hero h2{
+    font-size:3rem;
+    margin:2rem 0;
+}
+.hero p{
+    font-size:1.5rem;
+}
+.main{
+    height:70vh;
+    margin-left:10rem;
+}
+.firstpara{
+    height:25vh;
+    width:80vw;
+    margin:3rem 0;
+}
+.firstpara h1{
+    margin:1rem 0;
+    font-size: 2rem;
+}
+.firstpara p{
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+.secondpara{
+    height:25vh;
+    width:80vw;
+    margin: 2rem 0;
+}
+.secondpara h1{
+    margin:1rem 0;
+    font-size: 2rem;
+}
+.secondpara p{
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
